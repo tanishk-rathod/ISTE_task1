@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <div class="parent">
+
+        <div class="box">
+            <h2>Get In Touch</h2>
+            <form method="POST" action="/contact" >
+                <div class="first">
+                <input type="text" name="first_name" placeholder="First Name">
+                <input type="text" name="last_name" placeholder="Last Name">
+                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="phone" placeholder="Phone">
+            </div>
+                <div class="third">
+                <textarea name="address" id="address" cols="30" rows="2" placeholder="Address"></textarea>
+                <textarea name="message" id="msg" cols="30" rows="3" placeholder="Type your message here"></textarea>
+            </div>
+                <button>Submit</button>
+            </form>
+            {% if value %}
+                <h5>Thanks for submitting!</h5>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

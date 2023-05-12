@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   font-family: 'Wix Madefor Display', sans-serif;
+  
+  }
+  
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 250, 252);
+    width: 50%;
+    
+    
+  }
+  
+  .box {
+    display: grid;
+    width: 90%; /* Adjusted width */
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+ 
+  }
+  
+  .first {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .first input {
+    background-color: rgb(218, 245, 255);
+    
+    border-radius: 10px;
+    height: 20px;
+    padding: 7px;
+  }
+  
+  .second input {
+    background-color: rgb(218, 245, 255);
+    
+  }
+  
+  #address {
+    background-color: rgb(176, 218, 255);
+    border-radius: 10px;
+    padding: 4px;
+    
+  }
+  
+  #msg {
+    background-color: rgb(178, 164, 255);
+    border-radius: 10px;
+    padding: 4px;
+   
+  }
+  
+  button {
+    background-color: blue;
+   
+  }
+  
+  .second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    
+  }
+  
+  .third {
+    
+display: grid;
+grid-gap: 10px;
+margin-top: 5%;
+  
+  }
+  
+  h2{
+    margin: 0;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    color: rgb(19, 85, 144);
+   
+  }
+h5{
+color: rgb(166, 237, 166);
+}
+  button{
+   margin-left: 34%;
+   margin-top: 5%;
+   border-radius: 10px;
+   height: 30px;
+   width: 30%;
+  }
+
+  @media screen and (max-width:851px  ) and (min-width:561px){
+   
+    h2{
+        
+        text-align: center;
+        display: inline;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent{
+        width: 100%;
+    }
+    
+  }
+
+  @media screen and (max-width:560px) {
+
+    h2{
+        
+        text-align: center;
+        display: inline;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent{
+        width: 100%;
+    }
+  }
